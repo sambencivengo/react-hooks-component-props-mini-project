@@ -1,11 +1,11 @@
 import React from 'react';
 import Article from './Article';
 
-function ArticleList(props) {
+function ArticleList({ articles }) {
   return (
     <div className="ArticleList">
       <main>
-        <Article />
+        <Article key={articles.id} articles={articles} />
       </main>
     </div>
   );
