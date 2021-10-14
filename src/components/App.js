@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <Header blogName={blogData.name} />
       <About image={blogData.image} about={blogData.about} />
-      <ArticleList />
+      <ArticleList articles={blogData.posts} date="January 1, 1970" />
     </div>
   );
 }
